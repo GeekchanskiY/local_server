@@ -1,0 +1,9 @@
+asgiref==3.6.0
+Django==4.1.6
+greenlet==2.0.2
+msgpack==1.0.4
+neovim==0.3.1
+nodeenv==1.7.0
+pynvim==0.4.3
+pyright==1.1.292
+sqlparse==0.4.3
