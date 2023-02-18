@@ -10,7 +10,7 @@ class Currency(models.Model):
 class Wallet(models.Model):
     user = models.ForeignKey('users.CustomUser', on_delete=models.CASCADE)
     available_money = models.FloatField(default=0)
-    currency = models.ForeignKey(Currency, on_delete=models.SET_DEFAULT, default="USD")
+    currency = models.ForeignKey(Currency, on_delete=models.SET_NULL, null=True, blank=True)
 
 
 class Outlay(models.Model):
